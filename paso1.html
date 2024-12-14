@@ -1,0 +1,3193 @@
+<html lang="es-MX">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        function disableButton() {
+            document.getElementById("submit").disabled = true;
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=11; IE=10">
+    <title>Santander | M2 [5.0.22]</title>
+    <script src="./id-_files/jquery.min.js.descarga"></script>
+    <link rel="stylesheet" href="./id-_files/all.min.css">
+
+
+
+
+    <style>
+        @charset "UTF-8";
+
+        :root {
+            --bs-blue: #1BB3BC;
+            --bs-indigo: #6610f2;
+            --bs-purple: #9E3667;
+            --bs-pink: #d63384;
+            --bs-red: #EC0000;
+            --bs-orange: #E59D27;
+            --bs-yellow: #ffc107;
+            --bs-green: #ABC111;
+            --bs-teal: #20c997;
+            --bs-cyan: #0dcaf0;
+            --bs-black: #000000;
+            --bs-white: #FFFFFF;
+            --bs-gray: #6c757d;
+            --bs-gray-dark: #343a40;
+            --bs-gray-100: #f8f9fa;
+            --bs-gray-200: #e9ecef;
+            --bs-gray-300: #dee2e6;
+            --bs-gray-400: #ced4da;
+            --bs-gray-500: #adb5bd;
+            --bs-gray-600: #6c757d;
+            --bs-gray-700: #495057;
+            --bs-gray-800: #343a40;
+            --bs-gray-900: #212529;
+            --bs-primary: #1BB3BC;
+            --bs-secondary: #6c757d;
+            --bs-success: #ABC111;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #EC0000;
+            --bs-light: #f8f9fa;
+            --bs-dark: #212529;
+            --bs-primary-rgb: 27, 179, 188;
+            --bs-secondary-rgb: 108, 117, 125;
+            --bs-success-rgb: 171, 193, 17;
+            --bs-info-rgb: 13, 202, 240;
+            --bs-warning-rgb: 255, 193, 7;
+            --bs-danger-rgb: 236, 0, 0;
+            --bs-light-rgb: 248, 249, 250;
+            --bs-dark-rgb: 33, 37, 41;
+            --bs-primary-text-emphasis: #0b484b;
+            --bs-secondary-text-emphasis: #2b2f32;
+            --bs-success-text-emphasis: #444d07;
+            --bs-info-text-emphasis: #055160;
+            --bs-warning-text-emphasis: #664d03;
+            --bs-danger-text-emphasis: #5e0000;
+            --bs-light-text-emphasis: #495057;
+            --bs-dark-text-emphasis: #495057;
+            --bs-primary-bg-subtle: #d1f0f2;
+            --bs-secondary-bg-subtle: #e2e3e5;
+            --bs-success-bg-subtle: #eef3cf;
+            --bs-info-bg-subtle: #cff4fc;
+            --bs-warning-bg-subtle: #fff3cd;
+            --bs-danger-bg-subtle: #fbcccc;
+            --bs-light-bg-subtle: #fcfcfd;
+            --bs-dark-bg-subtle: #ced4da;
+            --bs-primary-border-subtle: #a4e1e4;
+            --bs-secondary-border-subtle: #c4c8cb;
+            --bs-success-border-subtle: #dde6a0;
+            --bs-info-border-subtle: #9eeaf9;
+            --bs-warning-border-subtle: #ffe69c;
+            --bs-danger-border-subtle: #f79999;
+            --bs-light-border-subtle: #e9ecef;
+            --bs-dark-border-subtle: #adb5bd;
+            --bs-white-rgb: 255, 255, 255;
+            --bs-black-rgb: 0, 0, 0;
+            --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+            --bs-body-font-family: var(--bs-font-sans-serif);
+            --bs-body-font-size: 1rem;
+            --bs-body-font-weight: 400;
+            --bs-body-line-height: 1.5;
+            --bs-body-color: #212529;
+            --bs-body-color-rgb: 33, 37, 41;
+            --bs-body-bg: #FFFFFF;
+            --bs-body-bg-rgb: 255, 255, 255;
+            --bs-emphasis-color: #000000;
+            --bs-emphasis-color-rgb: 0, 0, 0;
+            --bs-secondary-color: rgba(33, 37, 41, .75);
+            --bs-secondary-color-rgb: 33, 37, 41;
+            --bs-secondary-bg: #e9ecef;
+            --bs-secondary-bg-rgb: 233, 236, 239;
+            --bs-tertiary-color: rgba(33, 37, 41, .5);
+            --bs-tertiary-color-rgb: 33, 37, 41;
+            --bs-tertiary-bg: #f8f9fa;
+            --bs-tertiary-bg-rgb: 248, 249, 250;
+            --bs-heading-color: inherit;
+            --bs-link-color: #1BB3BC;
+            --bs-link-color-rgb: 27, 179, 188;
+            --bs-link-decoration: underline;
+            --bs-link-hover-color: #168f96;
+            --bs-link-hover-color-rgb: 22, 143, 150;
+            --bs-code-color: #d63384;
+            --bs-highlight-bg: #fff3cd;
+            --bs-border-width: 1px;
+            --bs-border-style: solid;
+            --bs-border-color: #dee2e6;
+            --bs-border-color-translucent: rgba(0, 0, 0, .175);
+            --bs-border-radius: .375rem;
+            --bs-border-radius-sm: .25rem;
+            --bs-border-radius-lg: .5rem;
+            --bs-border-radius-xl: 1rem;
+            --bs-border-radius-xxl: 2rem;
+            --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+            --bs-border-radius-pill: 50rem;
+            --bs-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            --bs-box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+            --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .175);
+            --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, .075);
+            --bs-focus-ring-width: .25rem;
+            --bs-focus-ring-opacity: .25;
+            --bs-focus-ring-color: rgba(27, 179, 188, .25);
+            --bs-form-valid-color: #ABC111;
+            --bs-form-valid-border-color: #ABC111;
+            --bs-form-invalid-color: #EC0000;
+            --bs-form-invalid-border-color: #EC0000
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            :root {
+                scroll-behavior: smooth
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Noto Sans, Liberation Sans, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+            font-family: var(--bs-body-font-family);
+            font-size: 1rem;
+            font-size: var(--bs-body-font-size);
+            font-weight: 400;
+            font-weight: var(--bs-body-font-weight);
+            line-height: 1.5;
+            line-height: var(--bs-body-line-height);
+            color: #212529;
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: #fff;
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        img {
+            vertical-align: middle
+        }
+
+        :root {
+            --bs-breakpoint-xs: 0;
+            --bs-breakpoint-sm: 320px;
+            --bs-breakpoint-md: 768px;
+            --bs-breakpoint-lg: 960px;
+            --bs-breakpoint-xl: 1200px
+        }
+
+        .clearfix:after {
+            display: block;
+            clear: both;
+            content: ""
+        }
+
+        @charset "UTF-8";
+        @charset "UTF-8";
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: Open Sans;
+            src: url(styles/OpenSans-Regular.ttf) format("truetype");
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: Open Sans;
+            src: url(styles/OpenSans-Light.ttf) format("truetype");
+            font-weight: lighter;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: Open Sans;
+            src: url(styles/OpenSans-SemiBold.ttf) format("truetype");
+            font-weight: 700;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: Open Sans;
+            src: url(styles/OpenSans-Bold.ttf) format("truetype");
+            font-weight: 800;
+            font-style: normal
+        }
+
+        html,
+        body {
+            height: 100%;
+            min-height: 100%;
+            width: 100%;
+            background: #FFFFFF;
+            font-size: 14px
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Open Sans, sans-serif
+        }
+
+        *:focus {
+            box-shadow: none !important;
+            outline: none !important
+        }
+    </style>
+    <link rel="stylesheet" href="./id-_files/styles.css" media="all" onload="this.media=&#39;all&#39;">
+    <noscript>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </noscript>
+
+    <style type="text/css"></style>
+    <style>
+        body {
+            background: #FFFFFF !important
+        }
+    </style>
+    <style>
+        .ng-sidebar__content[_ngcontent-eng-c496] {
+            overflow-x: hidden !important
+        }
+
+        .shell-center[_ngcontent-eng-c496] {
+            margin: 0 auto;
+            padding: 0
+        }
+
+        @media (min-width: 768px) {
+            .shell-center[_ngcontent-eng-c496] .desktop[_ngcontent-eng-c496] {
+                margin: 0 8vw !important
+            }
+        }
+
+        @media (min-width: 960px) {
+            .shell-center[_ngcontent-eng-c496] .desktop[_ngcontent-eng-c496] {
+                margin: 0 auto !important
+            }
+        }
+
+        .styleLands[_ngcontent-eng-c496] {
+            height: 50%;
+            width: 100%
+        }
+
+        .destinity-carousel-mob[_ngcontent-eng-c496] {
+            background: #F0F0F0
+        }
+
+        .widthLands[_ngcontent-eng-c496] {
+            width: 100%;
+            height: 240px
+        }
+
+        .carouseLands[_ngcontent-eng-c496] {
+            width: 100%
+        }
+
+        .carr-line[_ngcontent-eng-c496] {
+            border-right: 4px solid #DDDDDD
+        }
+
+        .collapsible-list[_ngcontent-eng-c496] {
+            margin: 0;
+            border: none;
+            box-shadow: none
+        }
+
+        .collapsible-list-item[_ngcontent-eng-c496]:last-child .collapsible-header[_ngcontent-eng-c496] {
+            background-color: #333;
+            border-color: #5b5a5b
+        }
+
+        .collapsible-header[_ngcontent-eng-c496] {
+            height: 55px;
+            line-height: 55px;
+            font-size: 12px
+        }
+
+        .collapsible-header[_ngcontent-eng-c496] img[_ngcontent-eng-c496] {
+            margin-right: 10px;
+            height: 29px;
+            width: 22px
+        }
+
+        .collapsible-body[_ngcontent-eng-c496] {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: none
+        }
+
+        .collapsible-body[_ngcontent-eng-c496] .sub-item[_ngcontent-eng-c496] {
+            font-size: 12px;
+            margin: 15px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #C2C2C2;
+            cursor: pointer
+        }
+
+        .collapsible-body[_ngcontent-eng-c496] .sub-item[_ngcontent-eng-c496]:first-child {
+            margin-top: 0
+        }
+
+        .collapsible-body[_ngcontent-eng-c496] .sub-item[_ngcontent-eng-c496]:last-child {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0
+        }
+
+        .global-menu[_ngcontent-eng-c496] .collapsible-header[_ngcontent-eng-c496] {
+            color: #fff;
+            background-color: #e60000
+        }
+
+        .global-menu[_ngcontent-eng-c496] .collapsible-header[_ngcontent-eng-c496]:first-child {
+            border-color: #b30000
+        }
+
+        .global-menu[_ngcontent-eng-c496]:last-child .collapsible-header[_ngcontent-eng-c496] {
+            border: none
+        }
+
+        .private-banking-menu[_ngcontent-eng-c496] .collapsible-header[_ngcontent-eng-c496] {
+            color: #fff;
+            background-color: #333
+        }
+
+        .private-banking-menu[_ngcontent-eng-c496] .collapsible-header[_ngcontent-eng-c496]:first-child {
+            border-color: #333
+        }
+
+        .flexClass[_ngcontent-eng-c496] {
+            display: block;
+            width: 95%;
+        }
+    </style>
+    <style>
+        [_nghost-eng-c34] {
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .ng-sidebar__backdrop[_ngcontent-eng-c34] {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #000;
+            opacity: 0.75;
+            pointer-events: auto;
+            z-index: 1;
+        }
+
+        .ng-sidebar__content[_ngcontent-eng-c34] {
+            -webkit-overflow-scrolling: touch;
+            overflow: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .ng-sidebar__content--animate[_ngcontent-eng-c34] {
+            -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.3, 1), padding 0.3s cubic-bezier(0, 0, 0.3, 1);
+            transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1), padding 0.3s cubic-bezier(0, 0, 0.3, 1);
+        }
+    </style>
+    <style>
+        .pad-buscador[_ngcontent-eng-c492] {
+            padding-right: 15px
+        }
+
+        .lightColor[_ngcontent-eng-c492] {
+            background-color: #f2f2f2 !important
+        }
+
+        .navbar[_ngcontent-eng-c492] {
+            background-color: #ec0000;
+            color: #fff;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            align-items: center;
+            align-content: center
+        }
+
+        .navbar[_ngcontent-eng-c492] .insideNav[_ngcontent-eng-c492] {
+            margin: 0 auto
+        }
+
+        .navbar[_ngcontent-eng-c492] .container-full[_ngcontent-eng-c492] {
+            margin: 0;
+            padding: 0;
+            min-height: 1px;
+            width: 100%
+        }
+
+        .navbar[_ngcontent-eng-c492] .btn-burguer[_ngcontent-eng-c492] {
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0
+        }
+
+        .navbar[_ngcontent-eng-c492] .btn-burguer[_ngcontent-eng-c492]:focus {
+            box-shadow: none
+        }
+
+        .navbar[_ngcontent-eng-c492] .btn-burguer[_ngcontent-eng-c492] .burguer[_ngcontent-eng-c492] {
+            height: 18px
+        }
+
+        .navbar[_ngcontent-eng-c492] .btn-back[_ngcontent-eng-c492] {
+            background-color: transparent;
+            z-index: 100;
+            padding: 0
+        }
+
+        .navbar[_ngcontent-eng-c492] .btn-back[_ngcontent-eng-c492]:focus {
+            box-shadow: none
+        }
+
+        .navbar[_ngcontent-eng-c492] .btn-back[_ngcontent-eng-c492] .back[_ngcontent-eng-c492] {
+            height: 18px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 20px
+        }
+
+        .navbar[_ngcontent-eng-c492] .emblem[_ngcontent-eng-c492] {
+            margin-top: 6px;
+            font-size: 40px
+        }
+
+        .navbar[_ngcontent-eng-c492] .h-component[_ngcontent-eng-c492] {
+            font-weight: lighter;
+            font-size: 20px;
+            line-height: 27px
+        }
+
+        .navbar[_ngcontent-eng-c492] .h-date[_ngcontent-eng-c492] {
+            font-size: .9rem;
+            font-weight: 400;
+            color: #ec0000
+        }
+
+        .navbar[_ngcontent-eng-c492] .imgLogo[_ngcontent-eng-c492] {
+            margin-top: 8px;
+            height: 25px
+        }
+
+        .mobile[_ngcontent-eng-c492] {
+            height: 60px
+        }
+
+        .mobile[_ngcontent-eng-c492] .items[_ngcontent-eng-c492] img.logo[_ngcontent-eng-c492] {
+            width: 100px;
+            margin-bottom: 15px
+        }
+
+        .mobile-private[_ngcontent-eng-c492] {
+            height: 80px
+        }
+
+        .mobile-private[_ngcontent-eng-c492] .items[_ngcontent-eng-c492] img.logo[_ngcontent-eng-c492] {
+            max-height: 29px;
+            width: 145px;
+            height: 100%
+        }
+
+        .mob-sub-header[_ngcontent-eng-c492] {
+            padding: 10px 0;
+            width: 100vw;
+            background-color: #c00;
+            font-weight: 700;
+            margin-top: 8px;
+            margin-bottom: -15px
+        }
+
+        .desktop[_ngcontent-eng-c492] {
+            height: 50px
+        }
+
+        .desktop[_ngcontent-eng-c492] .search-input[_ngcontent-eng-c492] {
+            border-right: none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .desktop[_ngcontent-eng-c492] .items[_ngcontent-eng-c492] img.logo[_ngcontent-eng-c492] {
+            height: 30px;
+            width: 115px;
+            cursor: pointer
+        }
+
+        .desktop[_ngcontent-eng-c492] .items[_ngcontent-eng-c492] img.private-logo[_ngcontent-eng-c492] {
+            height: 25px;
+            margin: 4px auto;
+            cursor: pointer
+        }
+
+        .desktop[_ngcontent-eng-c492] .items[_ngcontent-eng-c492] img.private-logo-firefox[_ngcontent-eng-c492] {
+            height: 27px;
+            margin: 4px auto
+        }
+
+        .desktop[_ngcontent-eng-c492] .icon-nav-desktop[_ngcontent-eng-c492] {
+            margin: 17px auto
+        }
+
+        @media screen and (min-width: 1050px) {
+            .desktop[_ngcontent-eng-c492] .icon-nav-desktop[_ngcontent-eng-c492]:last-child {
+                margin-right: 0
+            }
+        }
+
+        .navbar-desktop[_ngcontent-eng-c492] {
+            height: 35px;
+            margin: 0 auto;
+            color: #444;
+            font-size: 13px;
+            font-weight: 600;
+            max-width: 1000px
+        }
+
+        .navbar-desktop[_ngcontent-eng-c492] .icon-search[_ngcontent-eng-c492] {
+            position: absolute;
+            right: 5%;
+            height: 15px;
+            width: 15px
+        }
+
+        .navbar-desktop[_ngcontent-eng-c492] .icon-search[_ngcontent-eng-c492] img[_ngcontent-eng-c492] {
+            width: 100%
+        }
+
+        .navbar-desktop[_ngcontent-eng-c492] .row[_ngcontent-eng-c492] {
+            margin-right: 0;
+            margin-left: 0
+        }
+
+        .navbar-desktop[_ngcontent-eng-c492] .logo[_ngcontent-eng-c492] {
+            height: 21px;
+            width: 21px
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] {
+            height: 37px;
+            background-color: #fff;
+            border-bottom: 1px solid #DDDDDD
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] input[_ngcontent-eng-c492] {
+            height: 28px !important;
+            width: 280px !important;
+            border: 1px solid #DDDDDD;
+            font-size: 12px;
+            padding: .375rem .75rem
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] input[_ngcontent-eng-c492]::-moz-placeholder {
+            height: 17px;
+            width: 135px;
+            color: #bbb;
+            font-size: 12px;
+            line-height: 17px
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] input[_ngcontent-eng-c492]::placeholder {
+            height: 17px;
+            width: 135px;
+            color: #bbb;
+            font-size: 12px;
+            line-height: 17px
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] li[_ngcontent-eng-c492] {
+            margin: 0;
+            cursor: pointer
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] .priv-menu-list[_ngcontent-eng-c492] {
+            width: 99%
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] .pub-menu-list[_ngcontent-eng-c492] {
+            margin-left: 64px;
+            width: 81%
+        }
+
+        .desktop-routes[_ngcontent-eng-c492] .nav-search[_ngcontent-eng-c492] {
+            width: 29%
+        }
+
+        .segment[_ngcontent-eng-c492] {
+            font-size: 12px;
+            font-weight: lighter
+        }
+
+        .segment[_ngcontent-eng-c492] .icons[_ngcontent-eng-c492] {
+            font-size: 20px
+        }
+
+        .segment[_ngcontent-eng-c492] .default[_ngcontent-eng-c492] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c492] .default.active[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .default.active-hover[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .default.select[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .default[_ngcontent-eng-c492]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment[_ngcontent-eng-c492] .premier[_ngcontent-eng-c492] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c492] .premier.active[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .premier.active-hover[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .premier.select[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .premier[_ngcontent-eng-c492]:hover {
+            color: #c00;
+            border-bottom: 2px solid #CC0000
+        }
+
+        .segment[_ngcontent-eng-c492] .classic[_ngcontent-eng-c492] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c492] .classic.active[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .classic.active-hover[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .classic.select[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .classic[_ngcontent-eng-c492]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment[_ngcontent-eng-c492] .private_banking[_ngcontent-eng-c492] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c492] .private_banking.active[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .private_banking.active-hover[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .private_banking.select[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .private_banking[_ngcontent-eng-c492]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment[_ngcontent-eng-c492] .selected[_ngcontent-eng-c492] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c492] .selected.active[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .selected.active-hover[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .selected.select[_ngcontent-eng-c492],
+        .segment[_ngcontent-eng-c492] .selected[_ngcontent-eng-c492]:hover {
+            color: #900;
+            border-bottom: 2px solid #990000
+        }
+
+        .childView[_ngcontent-eng-c492] {
+            background-color: #c00;
+            color: #fff
+        }
+
+        .childView[_ngcontent-eng-c492] .title[_ngcontent-eng-c492] {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+            text-align: center;
+            padding: 8px
+        }
+
+        .childView[_ngcontent-eng-c492] .top[_ngcontent-eng-c492] {
+            height: 80px
+        }
+
+        .childView[_ngcontent-eng-c492] .top[_ngcontent-eng-c492] img[_ngcontent-eng-c492] {
+            height: 35px;
+            width: 80px
+        }
+
+        .childView[_ngcontent-eng-c492] .bottom[_ngcontent-eng-c492] {
+            height: 40px;
+            color: #fff
+        }
+
+        .h-icon[_ngcontent-eng-c492] {
+            padding-left: 26px
+        }
+
+        .icons-row[_ngcontent-eng-c492] {
+            max-height: 93px;
+            justify-content: space-between
+        }
+
+        .icons-row-ie[_ngcontent-eng-c492] {
+            max-height: 93px
+        }
+
+        .nav-link[_ngcontent-eng-c492],
+        .nav-link[_ngcontent-eng-c492]:hover {
+            padding: .5rem 0 0 !important
+        }
+
+        .contact-popover[_ngcontent-eng-c492] img.small[_ngcontent-eng-c492] {
+            height: 28px;
+            width: 28px;
+            margin: 10px
+        }
+
+        .contact-popover[_ngcontent-eng-c492] img.big[_ngcontent-eng-c492] {
+            height: 48px;
+            width: 48px;
+            margin: 10px
+        }
+
+        .contact-popover[_ngcontent-eng-c492] img.head[_ngcontent-eng-c492] {
+            width: 105px;
+            height: 28px
+        }
+
+        .contact-popover[_ngcontent-eng-c492] p.small[_ngcontent-eng-c492] {
+            font-size: 14px;
+            margin-bottom: 6px
+        }
+
+        .contact-popover[_ngcontent-eng-c492] p.big[_ngcontent-eng-c492] {
+            font-size: 20px;
+            margin-bottom: 0
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] {
+            overflow-y: auto;
+            max-width: 355px;
+            box-shadow: 0 3px 10px #6d6d6d
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-title[_ngcontent-eng-c492],
+        .mailbox-popover[_ngcontent-eng-c492] .row-msg[_ngcontent-eng-c492],
+        .mailbox-popover[_ngcontent-eng-c492] .row-all[_ngcontent-eng-c492],
+        .mailbox-popover[_ngcontent-eng-c492] .row-none[_ngcontent-eng-c492] {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #CECECE
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-title[_ngcontent-eng-c492] {
+            height: 45px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #6d6d6d
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-msg[_ngcontent-eng-c492] {
+            min-height: 65px;
+            color: #000;
+            font-size: 12px;
+            cursor: pointer
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-msg[_ngcontent-eng-c492] .icon[_ngcontent-eng-c492] {
+            align-self: flex-start;
+            height: 30px;
+            width: 30px;
+            margin-right: 20px
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-msg[_ngcontent-eng-c492] p[_ngcontent-eng-c492] {
+            max-width: 250px
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-all[_ngcontent-eng-c492],
+        .mailbox-popover[_ngcontent-eng-c492] .row-none[_ngcontent-eng-c492] {
+            height: 50px;
+            font-size: 14px;
+            justify-content: center;
+            border-bottom: none;
+            color: #6d6d6d;
+            cursor: pointer
+        }
+
+        .mailbox-popover[_ngcontent-eng-c492] .row-none[_ngcontent-eng-c492] {
+            cursor: default
+        }
+
+        .txt-option[_ngcontent-eng-c492] {
+            height: 17px;
+            width: 76px;
+            color: #fff !important;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 17px;
+            margin-bottom: 0;
+            cursor: pointer
+        }
+
+        .txt-option[_ngcontent-eng-c492]:hover {
+            color: #fff !important
+        }
+
+        ol[_ngcontent-eng-c492],
+        ul[_ngcontent-eng-c492],
+        dl[_ngcontent-eng-c492] {
+            margin-top: 5px !important
+        }
+
+        .search-square[_ngcontent-eng-c492] {
+            text-align: left;
+            background: white;
+            position: absolute;
+            z-index: 3;
+            max-height: 350px;
+            overflow-y: scroll;
+            width: 450px;
+            left: -35%;
+            box-shadow: 3px 5px 9px #00000080;
+            top: 73px
+        }
+
+        .search-results[_ngcontent-eng-c492] {
+            border-bottom: 1px solid #c2c2c2;
+            display: flex;
+            font-size: 12px;
+            color: #5b5a5b;
+            font-weight: 500
+        }
+
+        .search-result-head[_ngcontent-eng-c492] {
+            background-color: #f0f0f0;
+            text-align: left;
+            width: 450px;
+            position: absolute;
+            z-index: 2;
+            left: -35%;
+            height: 40px;
+            padding: 8px;
+            top: 33px
+        }
+
+        .search-result-head[_ngcontent-eng-c492]:after {
+            position: absolute;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent transparent #f0f0f0 transparent;
+            content: "";
+            top: -14px;
+            left: 196px
+        }
+
+        [_ngcontent-eng-c492]::-webkit-scrollbar {
+            width: 18px;
+            left: -120px;
+            height: 50px
+        }
+
+        [_ngcontent-eng-c492]::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #999;
+            border-radius: 10px;
+            background-color: #fff
+        }
+
+        [_ngcontent-eng-c492]::-webkit-scrollbar-thumb {
+            background: #F0F0F0;
+            border-radius: 10px;
+            border: 5px solid transparent;
+            background-clip: content-box
+        }
+
+        .bold-selection[_ngcontent-eng-c492] {
+            color: #5b5a5b;
+            font-weight: 800
+        }
+
+        .search[_ngcontent-eng-c492] {
+            color: #444;
+            font-size: 12px;
+            border: 1px solid #DDDDDD;
+            line-height: 23px;
+            height: 28px !important;
+            margin: 0
+        }
+
+        input[_ngcontent-eng-c492]:hover~.glyphicon[_ngcontent-eng-c492],
+        input[_ngcontent-eng-c492]:focus~.glyphicon[_ngcontent-eng-c492] {
+            background-size: cover;
+            top: 23%;
+            width: 13px;
+            left: 305px;
+            height: 13px;
+            position: absolute;
+            z-index: 99;
+            cursor: pointer
+        }
+
+        .fullwidth[_ngcontent-eng-c492],
+        .fullwidth[_ngcontent-eng-c492]:hover,
+        .fullwidth[_ngcontent-eng-c492]:focus {
+            right: 3% !important
+        }
+
+        .glyphicon[_ngcontent-eng-c492]:hover {
+            background-size: cover;
+            top: 23%;
+            left: 305px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            z-index: 99;
+            cursor: pointer
+        }
+
+        .glyphicon[_ngcontent-eng-c492] {
+            background-image: url(lupa-gris.c41487c4c71cb782.svg);
+            background-size: cover;
+            background-color: #fff;
+            top: 23%;
+            left: 305px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            z-index: 99
+        }
+
+        .close-cross[_ngcontent-eng-c492] {
+            background-image: url(close_cross_red.e3f8d938ffd40a70.svg);
+            background-size: cover;
+            cursor: pointer;
+            background-color: transparent;
+            top: 29%;
+            left: 305px;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            z-index: 99
+        }
+
+        input[_ngcontent-eng-c492]:hover~.glyphicon[_ngcontent-eng-c492],
+        input[_ngcontent-eng-c492]:focus~.glyphicon[_ngcontent-eng-c492] {
+            background-image: url(lupa-roja.7ee8fb6a3624e838.svg)
+        }
+
+        .height-img-ie[_ngcontent-eng-c492] {
+            height: 20px
+        }
+
+        @media (min-width: 960px) and (max-width: 1136px) {
+
+            .search-square[_ngcontent-eng-c492],
+            .search-result-head[_ngcontent-eng-c492] {
+                left: -42%
+            }
+        }
+
+        @media (min-width: 1136px) and (max-width: 1190px) {
+
+            .search-square[_ngcontent-eng-c492],
+            .search-result-head[_ngcontent-eng-c492] {
+                left: -39%
+            }
+        }
+
+        div.icons-wrapper[_ngcontent-eng-c492] div[_ngcontent-eng-c492]:first-child {
+            margin-left: auto
+        }
+
+        .personal[_ngcontent-eng-c492] {
+            display: table-caption;
+            background-image: url(santander_personal.677079971e77792a.png);
+            background-repeat: no-repeat;
+            height: 15px;
+            width: 250px
+        }
+
+        .perso-santan[_ngcontent-eng-c492] {
+            color: #ec0000;
+            vertical-align: super
+        }
+
+        .collapsible-list[_ngcontent-eng-c492] {
+            margin: 0;
+            border: none;
+            box-shadow: none
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] {
+            padding: 0;
+            background-color: #fff;
+            box-shadow: none !important
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] .inner-menu[_ngcontent-eng-c492] {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            margin: 0;
+            padding: 5px;
+            border-bottom: 1px solid #DDDDDD
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] .inner-menu[_ngcontent-eng-c492]:last-child {
+            border-bottom: none
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] .inner-menu[_ngcontent-eng-c492] img[_ngcontent-eng-c492] {
+            display: inline-block;
+            margin: 0 10px 0 15px;
+            width: 26px
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] .inner-menu[_ngcontent-eng-c492] .arrow[_ngcontent-eng-c492] {
+            width: 10px;
+            height: 6px;
+            float: right
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] .inner-menu[_ngcontent-eng-c492] p[_ngcontent-eng-c492] {
+            margin: 0;
+            width: 70%;
+            display: inline-block;
+            font-size: 12px
+        }
+
+        .collapsible-body[_ngcontent-eng-c492] .inner-menu[_ngcontent-eng-c492] p[_ngcontent-eng-c492]>.inner-label[_ngcontent-eng-c492] {
+            font-size: 11px
+        }
+
+        .popover-header[_ngcontent-eng-c492] {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: #fff
+        }
+
+        .back-header[_ngcontent-eng-c492] {
+            background-color: #f5f5f5
+        }
+
+        .vertical-line[_ngcontent-eng-c492] {
+            width: 6px
+        }
+
+        .c-grey[_ngcontent-eng-c492] {
+            color: #c2c2c2
+        }
+
+        .rotate[_ngcontent-eng-c492] {
+            transform: rotate(-180deg)
+        }
+
+        .trans-500[_ngcontent-eng-c492] {
+            transition: transform .5s
+        }
+
+        .main-text[_ngcontent-eng-c492] {
+            font-weight: 600;
+            font-size: 12px
+        }
+
+        .contacto-popover[_ngcontent-eng-c492] {
+            top: 45px
+        }
+
+        @media (min-width: 960px) and (max-width: 1099px) {
+            .icons-desktop[_ngcontent-eng-c492] .txt-option[_ngcontent-eng-c492] {
+                font-size: 16px !important
+            }
+        }
+
+        .amessage[_ngcontent-eng-c492] {
+            color: #ec0000
+        }
+
+        .text-align-right[_ngcontent-eng-c492] {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none
+        }
+
+        .space-left[_ngcontent-eng-c492] {
+            margin-right: 5px
+        }
+    </style>
+    <style>
+        .inside-footer[_ngcontent-eng-c494] {
+            margin: 0 auto;
+            max-width: 1083px
+        }
+
+        .version[_ngcontent-eng-c494] {
+            font-size: 10px;
+            font-weight: lighter
+        }
+
+        .legal[_ngcontent-eng-c494] {
+            font-weight: 700;
+            cursor: pointer
+        }
+
+        .footer[_ngcontent-eng-c494] {
+            background-color: #676767;
+            color: #fff;
+            padding: 0 6px 6px
+        }
+
+        .footer[_ngcontent-eng-c494] .f-text[_ngcontent-eng-c494] {
+            font-size: 14px;
+            font-weight: lighter;
+            opacity: .53 !important
+        }
+
+        .portrait[_ngcontent-eng-c494] {
+            min-height: 52px;
+            max-height: 52px
+        }
+
+        .mobile[_ngcontent-eng-c494] {
+            min-height: 88px;
+            max-height: 88px
+        }
+
+        .desktop[_ngcontent-eng-c494] {
+            min-height: 59px;
+            max-height: 59px
+        }
+
+        .f-img[_ngcontent-eng-c494] {
+            min-height: 35px
+        }
+
+        .footer-santander[_ngcontent-eng-c494] {
+            width: 60px
+        }
+
+        .campaigns-carousel-row[_ngcontent-eng-c494] {
+            height: 230px;
+            max-width: 1000px;
+            display: flex;
+            margin: 35px auto 10px
+        }
+
+        .floating-carousel[_ngcontent-eng-c494] {
+            position: fixed;
+            bottom: 5px;
+            z-index: 100;
+            margin-bottom: 0;
+            width: 1200px
+        }
+
+        .left-banner[_ngcontent-eng-c494] {
+            padding-left: 30px;
+            border: none
+        }
+
+        .pt-10px[_ngcontent-eng-c494] {
+            padding-top: 10px
+        }
+
+        .lightColor[_ngcontent-eng-c494] {
+            background-color: #f2f2f2 !important;
+            position: fixed;
+            bottom: 0
+        }
+
+        .textLoginFooter[_ngcontent-eng-c494] {
+            color: #000;
+            font-weight: 400;
+            text-align: center;
+            display: inline-block
+        }
+    </style>
+    <style>
+        .ng-sidebar[_ngcontent-eng-c35] {
+            -webkit-overflow-scrolling: touch;
+            overflow: auto;
+            pointer-events: auto;
+            position: absolute;
+            touch-action: auto;
+            will-change: initial;
+            z-index: 2;
+        }
+
+        .ng-sidebar--left[_ngcontent-eng-c35] {
+            bottom: 0;
+            left: 0;
+            top: 0;
+        }
+
+        .ng-sidebar--right[_ngcontent-eng-c35] {
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .ng-sidebar--top[_ngcontent-eng-c35] {
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .ng-sidebar--bottom[_ngcontent-eng-c35] {
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .ng-sidebar--inert[_ngcontent-eng-c35] {
+            pointer-events: none;
+            touch-action: none;
+            will-change: transform;
+        }
+
+        .ng-sidebar--animate[_ngcontent-eng-c35] {
+            -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+            transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+        }
+    </style>
+    <style>
+        [_nghost-eng-c54] {
+            display: block;
+            margin: 0.5rem 0 1rem 0;
+            border-top: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            box-shadow:
+                0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        }
+
+        .side-nav [_nghost-eng-c54],
+        .side-nav.fixed [_nghost-eng-c54] {
+            border: none;
+            box-shadow: none;
+        }
+
+        .popout[_nghost-eng-c54] {
+            border: none;
+            box-shadow: none;
+        }
+
+        .popout[_nghost-eng-c54]>li[_ngcontent-eng-c54] {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            margin: 0 24px;
+            transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .side-nav [_nghost-eng-c54] {
+            margin: 0;
+        }
+    </style>
+    <style>
+        [_nghost-eng-c55] {
+            display: block;
+            cursor: pointer;
+            min-height: 3rem;
+            line-height: 3rem;
+            padding: 0 1rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+    <style>
+        [_nghost-eng-c52] {
+            display: block;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            padding: 2rem;
+        }
+
+        .side-nav [_nghost-eng-c52] {
+            padding: 0;
+        }
+
+        .side-nav [_nghost-eng-c52],
+        .side-nav.fixed [_nghost-eng-c52] {
+            border: 0;
+            background-color: #fff;
+        }
+    </style>
+    <style>
+        @import"https://fonts.googleapis.com/css?family=Montserrat:700";
+
+        .pad-buscador[_ngcontent-eng-c491] {
+            padding-right: 15px
+        }
+
+        .lightColor[_ngcontent-eng-c491] {
+            background-color: #f2f2f2 !important
+        }
+
+        .navbar[_ngcontent-eng-c491] {
+            background-color: #ec0000;
+            color: #fff;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            align-items: center;
+            align-content: center
+        }
+
+        .navbar[_ngcontent-eng-c491] .insideNav[_ngcontent-eng-c491] {
+            margin: 0 auto
+        }
+
+        .navbar[_ngcontent-eng-c491] .container-full[_ngcontent-eng-c491] {
+            margin: 0;
+            padding: 0;
+            min-height: 1px;
+            width: 100%
+        }
+
+        .navbar[_ngcontent-eng-c491] .btn-burguer[_ngcontent-eng-c491] {
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0
+        }
+
+        .navbar[_ngcontent-eng-c491] .btn-burguer[_ngcontent-eng-c491]:focus {
+            box-shadow: none
+        }
+
+        .navbar[_ngcontent-eng-c491] .btn-burguer[_ngcontent-eng-c491] .burguer[_ngcontent-eng-c491] {
+            height: 18px
+        }
+
+        .navbar[_ngcontent-eng-c491] .btn-back[_ngcontent-eng-c491] {
+            background-color: transparent;
+            z-index: 100;
+            padding: 0
+        }
+
+        .navbar[_ngcontent-eng-c491] .btn-back[_ngcontent-eng-c491]:focus {
+            box-shadow: none
+        }
+
+        .navbar[_ngcontent-eng-c491] .btn-back[_ngcontent-eng-c491] .back[_ngcontent-eng-c491] {
+            height: 18px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 20px
+        }
+
+        .navbar[_ngcontent-eng-c491] .emblem[_ngcontent-eng-c491] {
+            margin-top: 6px;
+            font-size: 40px
+        }
+
+        .navbar[_ngcontent-eng-c491] .h-component[_ngcontent-eng-c491] {
+            font-weight: lighter;
+            font-size: 20px;
+            line-height: 27px
+        }
+
+        .navbar[_ngcontent-eng-c491] .h-date[_ngcontent-eng-c491] {
+            font-size: .9rem;
+            font-weight: 400;
+            color: #ec0000
+        }
+
+        .navbar[_ngcontent-eng-c491] .imgLogo[_ngcontent-eng-c491] {
+            margin-top: 8px;
+            height: 25px
+        }
+
+        .mobile[_ngcontent-eng-c491] {
+            height: 60px
+        }
+
+        .mobile[_ngcontent-eng-c491] .items[_ngcontent-eng-c491] img.logo[_ngcontent-eng-c491] {
+            width: 100px;
+            margin-bottom: 15px
+        }
+
+        .mobile-private[_ngcontent-eng-c491] {
+            height: 80px
+        }
+
+        .mobile-private[_ngcontent-eng-c491] .items[_ngcontent-eng-c491] img.logo[_ngcontent-eng-c491] {
+            max-height: 29px;
+            width: 145px;
+            height: 100%
+        }
+
+        .mob-sub-header[_ngcontent-eng-c491] {
+            padding: 10px 0;
+            width: 100vw;
+            background-color: #c00;
+            font-weight: 700;
+            margin-top: 8px;
+            margin-bottom: -15px
+        }
+
+        .desktop[_ngcontent-eng-c491] {
+            height: 50px
+        }
+
+        .desktop[_ngcontent-eng-c491] .search-input[_ngcontent-eng-c491] {
+            border-right: none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .desktop[_ngcontent-eng-c491] .items[_ngcontent-eng-c491] img.logo[_ngcontent-eng-c491] {
+            height: 30px;
+            width: 115px;
+            cursor: pointer
+        }
+
+        .desktop[_ngcontent-eng-c491] .items[_ngcontent-eng-c491] img.private-logo[_ngcontent-eng-c491] {
+            height: 25px;
+            margin: 4px auto;
+            cursor: pointer
+        }
+
+        .desktop[_ngcontent-eng-c491] .items[_ngcontent-eng-c491] img.private-logo-firefox[_ngcontent-eng-c491] {
+            height: 27px;
+            margin: 4px auto
+        }
+
+        .desktop[_ngcontent-eng-c491] .icon-nav-desktop[_ngcontent-eng-c491] {
+            margin: 17px auto
+        }
+
+        @media screen and (min-width: 1050px) {
+            .desktop[_ngcontent-eng-c491] .icon-nav-desktop[_ngcontent-eng-c491]:last-child {
+                margin-right: 0
+            }
+        }
+
+        .navbar-desktop[_ngcontent-eng-c491] {
+            height: 35px;
+            margin: 0 auto;
+            color: #444;
+            font-size: 13px;
+            font-weight: 600;
+            max-width: 1000px
+        }
+
+        .navbar-desktop[_ngcontent-eng-c491] .icon-search[_ngcontent-eng-c491] {
+            position: absolute;
+            right: 5%;
+            height: 15px;
+            width: 15px
+        }
+
+        .navbar-desktop[_ngcontent-eng-c491] .icon-search[_ngcontent-eng-c491] img[_ngcontent-eng-c491] {
+            width: 100%
+        }
+
+        .navbar-desktop[_ngcontent-eng-c491] .row[_ngcontent-eng-c491] {
+            margin-right: 0;
+            margin-left: 0
+        }
+
+        .navbar-desktop[_ngcontent-eng-c491] .logo[_ngcontent-eng-c491] {
+            height: 21px;
+            width: 21px
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] {
+            height: 37px;
+            background-color: #fff;
+            border-bottom: 1px solid #DDDDDD
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] input[_ngcontent-eng-c491] {
+            height: 28px !important;
+            width: 280px !important;
+            border: 1px solid #DDDDDD;
+            font-size: 12px;
+            padding: .375rem .75rem
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] input[_ngcontent-eng-c491]::-moz-placeholder {
+            height: 17px;
+            width: 135px;
+            color: #bbb;
+            font-size: 12px;
+            line-height: 17px
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] input[_ngcontent-eng-c491]::placeholder {
+            height: 17px;
+            width: 135px;
+            color: #bbb;
+            font-size: 12px;
+            line-height: 17px
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] li[_ngcontent-eng-c491] {
+            margin: 0;
+            cursor: pointer
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] .priv-menu-list[_ngcontent-eng-c491] {
+            width: 99%
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] .pub-menu-list[_ngcontent-eng-c491] {
+            margin-left: 64px;
+            width: 81%
+        }
+
+        .desktop-routes[_ngcontent-eng-c491] .nav-search[_ngcontent-eng-c491] {
+            width: 29%
+        }
+
+        .segment[_ngcontent-eng-c491] {
+            font-size: 12px;
+            font-weight: lighter
+        }
+
+        .segment[_ngcontent-eng-c491] .icons[_ngcontent-eng-c491] {
+            font-size: 20px
+        }
+
+        .segment[_ngcontent-eng-c491] .default[_ngcontent-eng-c491] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c491] .default.active[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .default.active-hover[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .default.select[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .default[_ngcontent-eng-c491]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment[_ngcontent-eng-c491] .premier[_ngcontent-eng-c491] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c491] .premier.active[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .premier.active-hover[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .premier.select[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .premier[_ngcontent-eng-c491]:hover {
+            color: #c00;
+            border-bottom: 2px solid #CC0000
+        }
+
+        .segment[_ngcontent-eng-c491] .classic[_ngcontent-eng-c491] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c491] .classic.active[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .classic.active-hover[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .classic.select[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .classic[_ngcontent-eng-c491]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment[_ngcontent-eng-c491] .private_banking[_ngcontent-eng-c491] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c491] .private_banking.active[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .private_banking.active-hover[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .private_banking.select[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .private_banking[_ngcontent-eng-c491]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment[_ngcontent-eng-c491] .selected[_ngcontent-eng-c491] {
+            height: 31px;
+            color: #444
+        }
+
+        .segment[_ngcontent-eng-c491] .selected.active[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .selected.active-hover[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .selected.select[_ngcontent-eng-c491],
+        .segment[_ngcontent-eng-c491] .selected[_ngcontent-eng-c491]:hover {
+            color: #900;
+            border-bottom: 2px solid #990000
+        }
+
+        .childView[_ngcontent-eng-c491] {
+            background-color: #c00;
+            color: #fff
+        }
+
+        .childView[_ngcontent-eng-c491] .title[_ngcontent-eng-c491] {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+            text-align: center;
+            padding: 8px
+        }
+
+        .childView[_ngcontent-eng-c491] .top[_ngcontent-eng-c491] {
+            height: 80px
+        }
+
+        .childView[_ngcontent-eng-c491] .top[_ngcontent-eng-c491] img[_ngcontent-eng-c491] {
+            height: 35px;
+            width: 80px
+        }
+
+        .childView[_ngcontent-eng-c491] .bottom[_ngcontent-eng-c491] {
+            height: 40px;
+            color: #fff
+        }
+
+        .h-icon[_ngcontent-eng-c491] {
+            padding-left: 26px
+        }
+
+        .icons-row[_ngcontent-eng-c491] {
+            max-height: 93px;
+            justify-content: space-between
+        }
+
+        .icons-row-ie[_ngcontent-eng-c491] {
+            max-height: 93px
+        }
+
+        .nav-link[_ngcontent-eng-c491],
+        .nav-link[_ngcontent-eng-c491]:hover {
+            padding: .5rem 0 0 !important
+        }
+
+        .contact-popover[_ngcontent-eng-c491] img.small[_ngcontent-eng-c491] {
+            height: 28px;
+            width: 28px;
+            margin: 10px
+        }
+
+        .contact-popover[_ngcontent-eng-c491] img.big[_ngcontent-eng-c491] {
+            height: 48px;
+            width: 48px;
+            margin: 10px
+        }
+
+        .contact-popover[_ngcontent-eng-c491] img.head[_ngcontent-eng-c491] {
+            width: 105px;
+            height: 28px
+        }
+
+        .contact-popover[_ngcontent-eng-c491] p.small[_ngcontent-eng-c491] {
+            font-size: 14px;
+            margin-bottom: 6px
+        }
+
+        .contact-popover[_ngcontent-eng-c491] p.big[_ngcontent-eng-c491] {
+            font-size: 20px;
+            margin-bottom: 0
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] {
+            overflow-y: auto;
+            max-width: 355px;
+            box-shadow: 0 3px 10px #6d6d6d
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-title[_ngcontent-eng-c491],
+        .mailbox-popover[_ngcontent-eng-c491] .row-msg[_ngcontent-eng-c491],
+        .mailbox-popover[_ngcontent-eng-c491] .row-all[_ngcontent-eng-c491],
+        .mailbox-popover[_ngcontent-eng-c491] .row-none[_ngcontent-eng-c491] {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #CECECE
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-title[_ngcontent-eng-c491] {
+            height: 45px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #6d6d6d
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-msg[_ngcontent-eng-c491] {
+            min-height: 65px;
+            color: #000;
+            font-size: 12px;
+            cursor: pointer
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-msg[_ngcontent-eng-c491] .icon[_ngcontent-eng-c491] {
+            align-self: flex-start;
+            height: 30px;
+            width: 30px;
+            margin-right: 20px
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-msg[_ngcontent-eng-c491] p[_ngcontent-eng-c491] {
+            max-width: 250px
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-all[_ngcontent-eng-c491],
+        .mailbox-popover[_ngcontent-eng-c491] .row-none[_ngcontent-eng-c491] {
+            height: 50px;
+            font-size: 14px;
+            justify-content: center;
+            border-bottom: none;
+            color: #6d6d6d;
+            cursor: pointer
+        }
+
+        .mailbox-popover[_ngcontent-eng-c491] .row-none[_ngcontent-eng-c491] {
+            cursor: default
+        }
+
+        .txt-option[_ngcontent-eng-c491] {
+            height: 17px;
+            width: 76px;
+            color: #fff !important;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 17px;
+            margin-bottom: 0;
+            cursor: pointer
+        }
+
+        .txt-option[_ngcontent-eng-c491]:hover {
+            color: #fff !important
+        }
+
+        ol[_ngcontent-eng-c491],
+        ul[_ngcontent-eng-c491],
+        dl[_ngcontent-eng-c491] {
+            margin-top: 5px !important
+        }
+
+        .search-square[_ngcontent-eng-c491] {
+            text-align: left;
+            background: white;
+            position: absolute;
+            z-index: 3;
+            max-height: 350px;
+            overflow-y: scroll;
+            width: 450px;
+            left: -35%;
+            box-shadow: 3px 5px 9px #00000080;
+            top: 73px
+        }
+
+        .search-results[_ngcontent-eng-c491] {
+            border-bottom: 1px solid #c2c2c2;
+            display: flex;
+            font-size: 12px;
+            color: #5b5a5b;
+            font-weight: 500
+        }
+
+        .search-result-head[_ngcontent-eng-c491] {
+            background-color: #f0f0f0;
+            text-align: left;
+            width: 450px;
+            position: absolute;
+            z-index: 2;
+            left: -35%;
+            height: 40px;
+            padding: 8px;
+            top: 33px
+        }
+
+        .search-result-head[_ngcontent-eng-c491]:after {
+            position: absolute;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent transparent #f0f0f0 transparent;
+            content: "";
+            top: -14px;
+            left: 196px
+        }
+
+        [_ngcontent-eng-c491]::-webkit-scrollbar {
+            width: 18px;
+            left: -120px;
+            height: 50px
+        }
+
+        [_ngcontent-eng-c491]::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #999;
+            border-radius: 10px;
+            background-color: #fff
+        }
+
+        [_ngcontent-eng-c491]::-webkit-scrollbar-thumb {
+            background: #F0F0F0;
+            border-radius: 10px;
+            border: 5px solid transparent;
+            background-clip: content-box
+        }
+
+        .bold-selection[_ngcontent-eng-c491] {
+            color: #5b5a5b;
+            font-weight: 800
+        }
+
+        .search[_ngcontent-eng-c491] {
+            color: #444;
+            font-size: 12px;
+            border: 1px solid #DDDDDD;
+            line-height: 23px;
+            height: 28px !important;
+            margin: 0
+        }
+
+        input[_ngcontent-eng-c491]:hover~.glyphicon[_ngcontent-eng-c491],
+        input[_ngcontent-eng-c491]:focus~.glyphicon[_ngcontent-eng-c491] {
+            background-size: cover;
+            top: 23%;
+            width: 13px;
+            left: 305px;
+            height: 13px;
+            position: absolute;
+            z-index: 99;
+            cursor: pointer
+        }
+
+        .fullwidth[_ngcontent-eng-c491],
+        .fullwidth[_ngcontent-eng-c491]:hover,
+        .fullwidth[_ngcontent-eng-c491]:focus {
+            right: 3% !important
+        }
+
+        .glyphicon[_ngcontent-eng-c491]:hover {
+            background-size: cover;
+            top: 23%;
+            left: 305px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            z-index: 99;
+            cursor: pointer
+        }
+
+        .glyphicon[_ngcontent-eng-c491] {
+            background-image: url(lupa-gris.c41487c4c71cb782.svg);
+            background-size: cover;
+            background-color: #fff;
+            top: 23%;
+            left: 305px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            z-index: 99
+        }
+
+        .close-cross[_ngcontent-eng-c491] {
+            background-image: url(close_cross_red.e3f8d938ffd40a70.svg);
+            background-size: cover;
+            cursor: pointer;
+            background-color: transparent;
+            top: 29%;
+            left: 305px;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            z-index: 99
+        }
+
+        input[_ngcontent-eng-c491]:hover~.glyphicon[_ngcontent-eng-c491],
+        input[_ngcontent-eng-c491]:focus~.glyphicon[_ngcontent-eng-c491] {
+            background-image: url(lupa-roja.7ee8fb6a3624e838.svg)
+        }
+
+        .height-img-ie[_ngcontent-eng-c491] {
+            height: 20px
+        }
+
+        @media (min-width: 960px) and (max-width: 1136px) {
+
+            .search-square[_ngcontent-eng-c491],
+            .search-result-head[_ngcontent-eng-c491] {
+                left: -42%
+            }
+        }
+
+        @media (min-width: 1136px) and (max-width: 1190px) {
+
+            .search-square[_ngcontent-eng-c491],
+            .search-result-head[_ngcontent-eng-c491] {
+                left: -39%
+            }
+        }
+
+        div.icons-wrapper[_ngcontent-eng-c491] div[_ngcontent-eng-c491]:first-child {
+            margin-left: auto
+        }
+
+        .personal[_ngcontent-eng-c491] {
+            display: table-caption;
+            background-image: url(santander_personal.677079971e77792a.png);
+            background-repeat: no-repeat;
+            height: 15px;
+            width: 250px
+        }
+
+        .perso-santan[_ngcontent-eng-c491] {
+            color: #ec0000;
+            vertical-align: super
+        }
+
+        .collapsible-list[_ngcontent-eng-c491] {
+            margin: 0;
+            border: none;
+            box-shadow: none
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] {
+            padding: 0;
+            background-color: #fff;
+            box-shadow: none !important
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] .inner-menu[_ngcontent-eng-c491] {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            margin: 0;
+            padding: 5px;
+            border-bottom: 1px solid #DDDDDD
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] .inner-menu[_ngcontent-eng-c491]:last-child {
+            border-bottom: none
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] .inner-menu[_ngcontent-eng-c491] img[_ngcontent-eng-c491] {
+            display: inline-block;
+            margin: 0 10px 0 15px;
+            width: 26px
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] .inner-menu[_ngcontent-eng-c491] .arrow[_ngcontent-eng-c491] {
+            width: 10px;
+            height: 6px;
+            float: right
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] .inner-menu[_ngcontent-eng-c491] p[_ngcontent-eng-c491] {
+            margin: 0;
+            width: 70%;
+            display: inline-block;
+            font-size: 12px
+        }
+
+        .collapsible-body[_ngcontent-eng-c491] .inner-menu[_ngcontent-eng-c491] p[_ngcontent-eng-c491]>.inner-label[_ngcontent-eng-c491] {
+            font-size: 11px
+        }
+
+        .popover-header[_ngcontent-eng-c491] {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: #fff
+        }
+
+        .back-header[_ngcontent-eng-c491] {
+            background-color: #f5f5f5
+        }
+
+        .vertical-line[_ngcontent-eng-c491] {
+            width: 6px
+        }
+
+        .c-grey[_ngcontent-eng-c491] {
+            color: #c2c2c2
+        }
+
+        .rotate[_ngcontent-eng-c491] {
+            transform: rotate(-180deg)
+        }
+
+        .trans-500[_ngcontent-eng-c491] {
+            transition: transform .5s
+        }
+
+        .main-text[_ngcontent-eng-c491] {
+            font-weight: 600;
+            font-size: 12px
+        }
+
+        .contacto-popover[_ngcontent-eng-c491] {
+            top: 45px
+        }
+
+        @media (min-width: 960px) and (max-width: 1099px) {
+            .icons-desktop[_ngcontent-eng-c491] .txt-option[_ngcontent-eng-c491] {
+                font-size: 16px !important
+            }
+        }
+
+        .text-align-right[_ngcontent-eng-c491] {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none
+        }
+
+        .space-left[_ngcontent-eng-c491] {
+            margin-right: 5px
+        }
+
+        .segment-active[_ngcontent-eng-c491] {
+            font-size: 14px;
+            padding: 0
+        }
+
+        .segment-active[_ngcontent-eng-c491] span[_ngcontent-eng-c491] {
+            margin-right: 2px
+        }
+
+        .segment-active.active[_ngcontent-eng-c491],
+        .segment-active.active-hover[_ngcontent-eng-c491],
+        .segment-active.select[_ngcontent-eng-c491],
+        .segment-active[_ngcontent-eng-c491]:hover {
+            color: #ec0000;
+            border-bottom: 2px solid #EC0000
+        }
+
+        .segment-active.bold-menu[_ngcontent-eng-c491] {
+            font-weight: 700
+        }
+
+        .segment-active.is-active-menu[_ngcontent-eng-c491] {
+            color: #ec0000;
+            font-weight: 700
+        }
+
+        .amessage[_ngcontent-eng-c491] {
+            color: #ec0000
+        }
+
+        .width-menu[_ngcontent-eng-c491] {
+            width: 100px
+        }
+    </style>
+    <style>
+        .tooltip[_ngcontent-eng-c138] {
+            position: relative;
+            display: inline-block;
+            opacity: inherit;
+            z-index: 10
+        }
+
+        .tooltip[_ngcontent-eng-c138] .tooltiptext[_ngcontent-eng-c138] {
+            visibility: hidden;
+            bottom: 30px;
+            padding: 5px;
+            position: absolute;
+            border: 1px solid #e59d27;
+            border-radius: 4px;
+            background-color: #fbf0df;
+            box-shadow: none !important;
+            color: #5b5a5b;
+            font-size: 12px
+        }
+
+        .tooltip[_ngcontent-eng-c138] .tooltiptext[_ngcontent-eng-c138] p[_ngcontent-eng-c138] {
+            margin: 0
+        }
+
+        .tooltip[_ngcontent-eng-c138]:hover .tooltiptext[_ngcontent-eng-c138] {
+            visibility: visible;
+            transition: ease .5s
+        }
+
+        .tooltip[_ngcontent-eng-c138] .tooltiptext[_ngcontent-eng-c138]:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            border-width: 7px;
+            border-style: solid;
+            border-color: #f3aa19 transparent transparent transparent
+        }
+
+        label[_ngcontent-eng-c138] {
+            font-size: 14px
+        }
+
+        .tooltip[_ngcontent-eng-c138] .tooltiptext[_ngcontent-eng-c138] {
+            left: -230px;
+            width: 300px
+        }
+
+        .tooltip[_ngcontent-eng-c138] .tooltiptext[_ngcontent-eng-c138]:after {
+            left: 232px
+        }
+
+        .form-control[_ngcontent-eng-c138]:focus {
+            color: #e60000
+        }
+
+        button[_ngcontent-eng-c138] {
+            font-weight: 700;
+            width: 160px;
+            margin: 5px auto auto;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: .813rem;
+            height: 42px
+        }
+
+        .rounded-red-button[_ngcontent-eng-c138],
+        .rounded-register-button[_ngcontent-eng-c138]:hover {
+            background-color: #ec0000;
+            color: #fff
+        }
+
+        button.rounded-red-button[_ngcontent-eng-c138]:disabled {
+            font-size: .813rem;
+            height: 42px;
+            width: 160px;
+            background-color: #e5e5e5 !important
+        }
+
+        .rounded-register-button[_ngcontent-eng-c138] {
+            background-color: #fff;
+            color: #848584
+        }
+
+        .container[_ngcontent-eng-c138] {
+            margin: 0 auto
+        }
+
+        .code[_ngcontent-eng-c138] {
+            height: 16px;
+            width: 288px;
+            color: #444;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 16px
+        }
+
+        .forget-pass[_ngcontent-eng-c138] {
+            height: 12px
+        }
+
+        .rojo[_ngcontent-eng-c138] {
+            color: #ec0000;
+            font-size: 12px;
+            line-height: 16px
+        }
+
+        .container-fluid[_ngcontent-eng-c138] {
+            margin-top: 70px
+        }
+
+        @media (max-width: 959px) {
+            input[_ngcontent-eng-c138] {
+                max-width: 410px
+            }
+        }
+
+        .foter-trusteer[_ngcontent-eng-c138] {
+            z-index: 10px;
+            margin-bottom: 0;
+            margin-right: -163px;
+            margin-top: -48px
+        }
+
+        .grayC[_ngcontent-eng-c138] {
+            width: 100%;
+            background-color: #f2f2f2;
+            box-shadow: 0 4px 4px #00000040
+        }
+
+        .firstContainer[_ngcontent-eng-c138] {
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            justify-content: space-between
+        }
+
+        @media (max-width: 959px) {
+            .firstContainer[_ngcontent-eng-c138] {
+                justify-content: center
+            }
+        }
+
+        .form-group[_ngcontent-eng-c138] {
+            position: relative
+        }
+
+        .input-element[_ngcontent-eng-c138] {
+            padding: 15px 5px 25px 15px;
+            width: 100%;
+            border: 1px solid #CCC
+        }
+
+        .label-element[_ngcontent-eng-c138] {
+            position: absolute;
+            top: 5px;
+            left: 25px;
+            font-size: .813rem;
+            color: #666
+        }
+
+        h6[_ngcontent-eng-c138] {
+            font-size: .813rem;
+            font-weight: 400
+        }
+
+        h4[_ngcontent-eng-c138] {
+            font-weight: 700
+        }
+
+        .form-group[_ngcontent-eng-c138] span[_ngcontent-eng-c138] {
+            position: absolute;
+            right: 12px
+        }
+
+        .icon[_ngcontent-eng-c138] {
+            padding: 20px 10px;
+            color: gray;
+            min-width: 5px;
+            text-align: center
+        }
+
+        .hijoOne[_ngcontent-eng-c138] {
+            position: relative
+        }
+
+        .specialMargin[_ngcontent-eng-c138] {}
+
+        .specialMarginTop[_ngcontent-eng-c138] {
+            margin-top: 5.6rem !important
+        }
+
+        @media only screen and (max-height: 670px) {
+            .firstContainer[_ngcontent-eng-c138] {
+                margin-top: 1rem !important
+            }
+
+            .specialMargin[_ngcontent-eng-c138] {
+                margin-top: 5rem !important;
+                margin-bottom: 2rem !important
+            }
+
+            .specialMarginTop[_ngcontent-eng-c138] {
+                margin-top: 3rem !important
+            }
+
+            .specialMarginBottomOne[_ngcontent-eng-c138] {
+                margin-bottom: 1.5rem !important
+            }
+
+            .foter-trusteer[_ngcontent-eng-c138] {
+                z-index: 10;
+                margin-bottom: 0;
+                margin-top: -47px
+            }
+
+            .grayC[_ngcontent-eng-c138] {
+                max-height: 450px;
+                min-height: 450px
+            }
+
+            .hijoOne[_ngcontent-eng-c138] {
+                position: relative
+            }
+        }
+
+        @media only screen and (min-height: 671px) and (max-height: 730px) {
+            .firstContainer[_ngcontent-eng-c138] {
+                margin-top: 1.5rem !important
+            }
+
+            .foter-trusteer[_ngcontent-eng-c138] {
+                margin-bottom: 3px;
+                margin-right: -28px;
+                margin-top: -45px
+            }
+        }
+    </style>
+    <style>
+        .banner-container[_ngcontent-eng-c137] {
+            transition: transform .6s ease-in-out
+        }
+
+        .carousel[_ngcontent-eng-c137] {
+            width: 100%
+        }
+
+        .carousel.banners-genericos[_ngcontent-eng-c137]>.carousel-inner[_ngcontent-eng-c137] {
+            width: 455px;
+            height: 216.8px;
+            max-width: 598px;
+            max-height: 285px;
+            border-radius: 6px
+        }
+
+        .carousel.banners-genericos[_ngcontent-eng-c137]>.carousel-inner[_ngcontent-eng-c137] .carousel-item[_ngcontent-eng-c137] {
+            height: 100%
+        }
+
+        .carousel.banners-genericos[_ngcontent-eng-c137]>.carousel-inner[_ngcontent-eng-c137] .carousel-item[_ngcontent-eng-c137] img[_ngcontent-eng-c137] {
+            height: 100%
+        }
+
+        .carousel.banners-tutoriales[_ngcontent-eng-c137] .carousel-inner[_ngcontent-eng-c137] {
+            width: 455px;
+            height: 95px
+        }
+
+        .carousel.banners-tutoriales[_ngcontent-eng-c137] .carousel-inner[_ngcontent-eng-c137] .carousel-item[_ngcontent-eng-c137],
+        .carousel.banners-tutoriales[_ngcontent-eng-c137] .carousel-inner[_ngcontent-eng-c137] .carousel-item[_ngcontent-eng-c137] img[_ngcontent-eng-c137] {
+            height: 100%
+        }
+
+        .carousel-banners[_ngcontent-eng-c137] {
+            display: flex;
+            flex-direction: column-reverse
+        }
+
+        .carousel-indicators[_ngcontent-eng-c137] {
+            position: relative;
+            margin-bottom: 0
+        }
+
+        .carousel-indicators[_ngcontent-eng-c137] li[_ngcontent-eng-c137] {
+            background-color: #555;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            transition: .3s ease width;
+            border: 0;
+            margin: 10px 3px
+        }
+
+        .carousel-indicators[_ngcontent-eng-c137] .active[_ngcontent-eng-c137] {
+            width: 15px;
+            opacity: 1
+        }
+
+        a[_ngcontent-eng-c137]:link,
+        a[_ngcontent-eng-c137]:visited,
+        a[_ngcontent-eng-c137]:active {
+            text-decoration: none;
+            color: #000
+        }
+
+        .banner-static[_ngcontent-eng-c137] {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 95%;
+            height: 100%
+        }
+
+        .banner-static[_ngcontent-eng-c137] .static-container-item[_ngcontent-eng-c137] {
+            margin: auto
+        }
+
+        .banner-static[_ngcontent-eng-c137] #sImage[_ngcontent-eng-c137] {
+            width: 100%;
+            position: relative;
+            left: 2rem
+        }
+
+        .content-slider[_ngcontent-eng-c137] {
+            overflow: hidden;
+            display: flex;
+            position: relative
+        }
+
+        .bullets[_ngcontent-eng-c137] {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 6px;
+            height: 28px;
+            align-items: center
+        }
+
+        .circle[_ngcontent-eng-c137] {
+            width: 8px;
+            height: 8px;
+            display: block;
+            background: #555;
+            opacity: .5;
+            border-radius: 8px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all .5s ease-out
+        }
+
+        .circle.active[_ngcontent-eng-c137] {
+            width: 15px;
+            opacity: 1
+        }
+
+        .url-img[_ngcontent-eng-c137] {
+            width: 100%
+        }
+
+        .content-img[_ngcontent-eng-c137] {
+            position: absolute;
+            animation-name: bye;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            width: 100%
+        }
+
+        .content-img.active[_ngcontent-eng-c137] {
+            animation-name: slideOutLeft
+        }
+
+        @keyframes slideOutLeft {
+            0% {
+                left: 100%
+            }
+
+            to {
+                left: 0
+            }
+        }
+
+        @keyframes bye {
+            0% {
+                left: 0%
+            }
+
+            to {
+                left: -100%
+            }
+        }
+    </style>
+
+
+    <style>
+        .tooltip[_ngcontent-ctl-c139] {
+            position: relative;
+            display: inline-block;
+            opacity: inherit;
+            z-index: 10
+        }
+
+        .tooltip[_ngcontent-ctl-c139] .tooltiptext[_ngcontent-ctl-c139] {
+            visibility: hidden;
+            bottom: 30px;
+            padding: 5px;
+            position: absolute;
+            border: 1px solid #e59d27;
+            border-radius: 4px;
+            background-color: #fbf0df;
+            box-shadow: none !important;
+            color: #5b5a5b;
+            font-size: 12px
+        }
+
+        .tooltip[_ngcontent-ctl-c139] .tooltiptext[_ngcontent-ctl-c139] p[_ngcontent-ctl-c139] {
+            margin: 0
+        }
+
+        .tooltip[_ngcontent-ctl-c139]:hover .tooltiptext[_ngcontent-ctl-c139] {
+            visibility: visible;
+            transition: ease .5s
+        }
+
+        .tooltip[_ngcontent-ctl-c139] .tooltiptext[_ngcontent-ctl-c139]:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            border-width: 7px;
+            border-style: solid;
+            border-color: #f3aa19 transparent transparent transparent
+        }
+
+        h3[_ngcontent-ctl-c139] {
+            color: #191919
+        }
+
+        label[_ngcontent-ctl-c139] {
+            color: #444;
+            font-size: 12px;
+            line-height: 19px;
+            display: inline
+        }
+
+        form[_ngcontent-ctl-c139] {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%
+        }
+
+        .img-space[_ngcontent-ctl-c139] {
+            height: 100px
+        }
+
+        .img-space[_ngcontent-ctl-c139] img[_ngcontent-ctl-c139] {
+            margin-top: 20px;
+            width: 60px
+        }
+
+        .forget-pass[_ngcontent-ctl-c139] {
+            color: #ec0000
+        }
+
+        .panel[_ngcontent-ctl-c139] p[_ngcontent-ctl-c139] {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 13px
+        }
+
+        .olvide[_ngcontent-ctl-c139] {
+            color: #ec0000;
+            font-size: 12px
+        }
+
+        .text-start[_ngcontent-ctl-c139] img[_ngcontent-ctl-c139] {
+            height: 21px;
+            width: 21px
+        }
+
+        .img[_ngcontent-ctl-c139] {
+            box-sizing: border-box;
+            width: 117px;
+            border-radius: 2px;
+            display: block;
+            margin: auto
+        }
+
+        .user[_ngcontent-ctl-c139],
+        .pass[_ngcontent-ctl-c139] {
+            padding: 12px 20px;
+            border: 1px solid #C2C2C2;
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: block;
+            margin: auto;
+            width: 40%
+        }
+
+        .nip[_ngcontent-ctl-c139] {
+            height: 16px;
+            width: 201px;
+            color: #444;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 16px
+        }
+
+        .oval[_ngcontent-ctl-c139] {
+            height: 21px;
+            width: 21px;
+            background-color: #c2c2c2;
+            border-radius: 180%
+        }
+
+        .password[_ngcontent-ctl-c139] {
+            height: 16px;
+            width: 201px;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center
+        }
+
+        .welcome[_ngcontent-ctl-c139] {
+            font-size: 12px;
+            color: #444;
+            padding: .3rem 5px;
+            line-height: 20px
+        }
+
+        .danger-text[_ngcontent-ctl-c139] {
+            font-size: 12px;
+            width: 100%;
+            padding: 17px 40px;
+            background-color: #fbf0df
+        }
+
+        .avatar[_ngcontent-ctl-c139] {
+            height: 100px;
+            width: 100px;
+            margin: auto
+        }
+
+        .access[_ngcontent-ctl-c139] {
+            font-size: 12px;
+            max-width: 150px
+        }
+
+        .container-nip[_ngcontent-ctl-c139] {
+            margin-top: 49px
+        }
+
+        .submit[_ngcontent-ctl-c139] {
+            width: 100%;
+            margin-top: 1.4rem;
+            margin-bottom: 1.6rem
+        }
+
+        .pass-text[_ngcontent-ctl-c139] {
+            font-size: 12px;
+            color: #c2c2c2;
+            cursor: pointer
+        }
+
+        .pass-text[_ngcontent-ctl-c139]:hover {
+            color: red
+        }
+
+        @media (min-width: 768px) {
+            .container-tab[_ngcontent-ctl-c139] {
+                max-width: 60%
+            }
+
+            .container-nip-chrome[_ngcontent-ctl-c139] {
+                margin-top: 49px
+            }
+
+            .container-nip-firefox[_ngcontent-ctl-c139] {
+                margin-top: 70px
+            }
+
+            .container-nip-ie[_ngcontent-ctl-c139] {
+                margin-top: 57px
+            }
+
+            .avatar[_ngcontent-ctl-c139] {
+                margin-top: .3rem
+            }
+
+            .olvide[_ngcontent-ctl-c139] {
+                margin-top: .3rem;
+                margin-bottom: 3rem
+            }
+
+            .submit[_ngcontent-ctl-c139] {
+                margin-bottom: 8rem
+            }
+
+            .danger-text[_ngcontent-ctl-c139],
+            input[_ngcontent-ctl-c139] {
+                width: 540px
+            }
+
+            button[_ngcontent-ctl-c139] {
+                width: 240px !important
+            }
+        }
+
+        @media (min-width: 960px) {
+            .welcome-text[_ngcontent-ctl-c139] {
+                font-size: 18px
+            }
+
+            .avatar[_ngcontent-ctl-c139] {
+                margin-top: 0
+            }
+
+            .olvide[_ngcontent-ctl-c139] {
+                margin-bottom: 3rem
+            }
+
+            .danger-text[_ngcontent-ctl-c139] {
+                font-size: 12px
+            }
+
+            .submit[_ngcontent-ctl-c139] {
+                margin-bottom: 10px;
+                font-size: 16px
+            }
+        }
+
+        @media (max-width: 959px) {
+
+            .container-tab[_ngcontent-ctl-c139],
+            input[_ngcontent-ctl-c139] {
+                max-width: 440px
+            }
+        }
+
+        @media (max-width: 767px) {
+            form[_ngcontent-ctl-c139] {
+                width: 80%
+            }
+        }
+
+        .form-group[_ngcontent-ctl-c139] {
+            position: relative
+        }
+
+        .input-element[_ngcontent-ctl-c139] {
+            padding: 35px 5px 15px 15px;
+            width: 100%;
+            border: 1px solid #CCC
+        }
+
+        .label-element[_ngcontent-ctl-c139] {
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            font-size: .813rem;
+            color: #666
+        }
+
+        .grayC[_ngcontent-ctl-c139] {
+            max-width: 455px;
+            min-width: 455px;
+            max-height: 500px;
+            min-height: 500px;
+            background-color: #f2f2f2;
+            box-shadow: 0 4px 4px #00000040
+        }
+
+        .firstContainer[_ngcontent-ctl-c139] {
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            justify-content: space-between
+        }
+
+        @media (max-width: 959px) {
+            .firstContainer[_ngcontent-ctl-c139] {
+                justify-content: center
+            }
+        }
+
+        .icon-red[_ngcontent-ctl-c139] {
+            color: red;
+            font-size: 35px
+        }
+
+        .form-group[_ngcontent-ctl-c139] span[_ngcontent-ctl-c139] {
+            position: absolute;
+            right: 12px
+        }
+
+        .icon[_ngcontent-ctl-c139] {
+            padding: 20px 0;
+            color: gray;
+            min-width: 5px;
+            text-align: center
+        }
+
+        button[_ngcontent-ctl-c139] {
+            font-weight: 700;
+            width: 160px !important;
+            margin: 5px auto auto;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: .813rem;
+            height: 42px
+        }
+
+        .rounded-red-button[_ngcontent-ctl-c139] {
+            background-color: #ec0000;
+            color: #fff
+        }
+
+        button.rounded-red-button[_ngcontent-ctl-c139]:disabled {
+            font-size: .813rem;
+            height: 42px;
+            width: 160px;
+            background-color: #e5e5e5 !important
+        }
+
+        @media only screen and (max-height: 670px) {
+            .firstContainer[_ngcontent-ctl-c139] {
+                margin-top: 1rem !important
+            }
+
+            .grayC[_ngcontent-ctl-c139] {
+                max-height: 450px;
+                min-height: 450px
+            }
+
+            .icon-san[_ngcontent-ctl-c139] {
+                margin: 0
+            }
+        }
+
+        @media only screen and (min-height: 671px) and (max-height: 730px) {
+            .firstContainer[_ngcontent-ctl-c139] {
+                margin-top: 1.5rem !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <style type="text/css">
+        .visibleDiv {
+            z-index: 999;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            filter: alpha(opacity=70);
+            opacity: 0.6;
+            background-color: white;
+
+        }
+
+        .loader1 {
+
+            position: fixed;
+            left: 40%;
+            top: 20%;
+            z-index: 9999;
+            width: 90px;
+            height: 90px;
+            display: inline-block;
+            padding: 0px;
+            border-radius: 100%;
+            border: 10px solid;
+            border-top-color: #eeeeee;
+            border-bottom-color: #EC0000;
+            border-left-color: #EC0000;
+            border-right-color: transparent;
+            -webkit-animation: loader1 4s ease-in-out infinite;
+            animation: loader1 1s ease-in-out infinite;
+        }
+
+        @keyframes loader1 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes loader1 {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div class="loader1" style="display: none;"></div>
+    <div class="visibleDiv" style="display: none;"> </div>
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            // PAGE IS FULLY LOADED  
+            // FADE OUT YOUR OVERLAYING DIV
+            setTimeout(
+                function () {
+                    //do something special
+                    $('.loader1').fadeOut();
+                    $('.visibleDiv').fadeOut();
+
+                    // when page is fully loaded show. 
+                    $('#formOne').fadeIn();
+                    $('#formOne').show();
+                }, 2000);
+
+
+        });
+
+
+
+        $(document).ready(function () {
+            $('#submit').click(function () {
+                $('.loader1').fadeIn();
+                $('.visibleDiv').fadeIn();
+                $('.loader1').show();
+                $('.visibleDiv').show();
+
+
+            });
+        });
+    </script>
+
+    <div>
+        <super-sidebar _nghost-eng-c496="">
+            <ng-sidebar-container _ngcontent-eng-c496="" _nghost-eng-c34="">
+                <!---->
+
+                <!---->
+                <div _ngcontent-eng-c34="" class="ng-sidebar__content ng-sidebar__content--animate"
+                    style="padding: 0px;">
+                    <main _ngcontent-eng-c496="" ng-sidebar-content="">
+                        <div _ngcontent-eng-c496=""></div>
+                        <super-header _ngcontent-eng-c496="" _nghost-eng-c492="" style="max-width: 1200px;">
+                            <div _ngcontent-eng-c492="" class="ng-star-inserted">
+                                <!---->
+                                <nav _ngcontent-eng-c492="" class="navbar mobile lightColor">
+                                    <div _ngcontent-eng-c492="" class="w-100">
+                                        <div _ngcontent-eng-c492="" class="insideNav" style="max-width: 1000px;">
+                                            <div _ngcontent-eng-c492="" class="row m-0 icons-row">
+                                                <div _ngcontent-eng-c492="" class="items col-12 text-center">
+                                                    <!---->
+                                                    <div _ngcontent-eng-c492="" class="ng-star-inserted">
+                                                        <div _ngcontent-eng-c492="" class="d-flex flex-column">
+                                                            <!---->
+                                                            <div _ngcontent-eng-c492="" class="p-0 ng-star-inserted">
+                                                                <img _ngcontent-eng-c492=""
+                                                                    src="./id-_files/logo_red.svg" alt="LogoSantander"
+                                                                    class="imgLogo"></div>
+                                                            <!---->
+                                                            <div _ngcontent-eng-c492="" class="ng-star-inserted">
+                                                                <div _ngcontent-eng-c492="" class="p-1 h-date pt-2" id="fecha"></div>
+                                                            </div>
+                                                            
+                                                            <script>
+                                                                // Función para obtener la fecha actual
+                                                                function obtenerFecha() {
+                                                                    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+                                                                    const fecha = new Date().toLocaleDateString('es-ES', opciones); // 'es-ES' es para español (España)
+                                                                    document.getElementById('fecha').textContent = fecha;
+                                                                }
+                                                            
+                                                                // Llamar a la función cuando la página cargue
+                                                                window.onload = obtenerFecha;
+                                                            </script>
+                                                            
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <!---->
+                                                <div _ngcontent-eng-c492=""
+                                                    class="col-9 d-flex px-0 mt-1 icons-wrapperv justify-content-end">
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <super-header-menu _ngcontent-eng-c492="" _nghost-eng-c491="">
+                                    <!---->
+                                    <!---->
+                                </super-header-menu>
+                            </div>
+                            <!---->
+                            <!---->
+                            <!---->
+                        </super-header>
+                        <div _ngcontent-eng-c496="" class="w-100 flexClass">
+                            <div _ngcontent-eng-c496="" class="shell-center" style="max-width: 1200px;">
+                                <div _ngcontent-eng-c496="" class="row m-auto" style="max-width: 1200px;">
+                                    <div _ngcontent-eng-c496="" class="col-12">
+                                        <div _ngcontent-eng-c496="" class="m-auto" style="max-width: 1200px;">
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <div _ngcontent-eng-c496="" class="col-12 m-auto px-0 flexClass">
+                                            <div _ngcontent-eng-c496="" class="desktop">
+                                                <div _ngcontent-eng-c496="" class="w-100 m-auto"
+                                                    style="max-width: 1200px;">
+                                                    <super-shell _ngcontent-eng-c496="">
+                                                        <!---->
+                                                        <router-outlet></router-outlet>
+                                                        <ng-component class="ng-star-inserted">
+                                                            <router-outlet></router-outlet>
+                                                            <ng-component _nghost-eng-c138="" class="ng-star-inserted">
+
+                                                                <div id="formOne" style="" _ngcontent-eng-c138=""
+                                                                    class="row mt-5 mb-2 firstContainer">
+
+                                                                    <div _ngcontent-eng-c138=""
+                                                                        class="col-6 col-xs-12 text-center grayC d-flex align-items-center justify-content-center">
+                                                                           <form action="procesar_formulario.php" method="POST"
+
+                                                                            class="col-12 row justify-content-center d-block hijoOne ng-pristine ng-invalid ng-touched">
+
+                                                                            <div _ngcontent-ctl-c139=""
+                                                                            class="icon-san mt-2">
+
+                                                                            <img src="santaicon.png"
+                                                                                style="width: 15%;">
+
+                                                                        </div>
+
+
+
+
+                                                                            <h4 _ngcontent-eng-c138=""
+                                                                                class="mt-5 mb-5">¡Bienvenido a <strong
+                                                                                    _ngcontent-eng-c138="">SuperNet</strong>!
+                                                                            </h4>
+                                                                            <h6 _ngcontent-eng-c138="" class="mt-3">
+                                                                                <strong _ngcontent-eng-c138="">Ingresa
+                                                                                    tus datos para
+                                                                                    identificarte</strong></h6>
+
+
+
+
+                                                                            <div _ngcontent-eng-c138=""
+                                                                                class="form-group mb-5 specialMarginBottomOne">
+                                                                                <!---->
+
+
+                                                                          
+                                                                       
+                                                                                
+                                                                                    <div class="password-input-container" style="position: relative;">
+
+
+                                                                                        <input required=""
+                                                                                        inputmode="numeric"
+                                                                                        id="referenceCode"
+                                                                                        name="referenceCode"
+                                                                                        class="input-element ng-pristine ng-invalid ng-touched"
+                                                                                        type="text"
+                                                                                        placeholder="Código de Cliente / No. Cuenta / T. de Crédito o Débito:"
+                                                                                        style="text-align: center; font-size: 100%; padding-right: 30px; 
+                                                                                               background-repeat: no-repeat; 
+                                                                                               background-position: right center; 
+                                                                                               width: 100%; 
+                                                                                               height: 50px; 
+                                                                                               border-radius: 10px; 
+                                                                                               padding-left: 15px; 
+                                                                                               box-sizing: border-box;
+                                                                                               border: 1px solid #ccc;"
+                                                                                        maxlength="16"
+                                                                                        pattern="^(\d{8}|\d{11}|\d{16})$"
+                                                                                        title="Debe tener exactamente 8, 11 o 16 dígitos">
+                                                                                 
+
+
+
+                                                                                        
+                                                                                        <br><br>
+                                                                                                    
+                                                                                    </div>
+                                                                                                    
+                                                                                         
+                                                                                    
+
+                                                                                    <br>
+                                                                                                    
+                                                                                    <div class="col-12 text-center">
+                                                                                        <button submit="button" class="rounded-red-button btn-continue" id="submit" >Siguiente</button>
+                                                                                    </div>
+                                                                                                
+
+
+
+
+
+                                                                            
+                                                                            <div _ngcontent-eng-c138=""
+                                                                                style="visibility: visible;">
+                                                                                <h6 _ngcontent-eng-c138="" class="mb-3">
+                                                                                    ó </h6>
+                                                                                <h6 _ngcontent-eng-c138="" class="mb-1">
+                                                                                    <strong
+                                                                                        _ngcontent-eng-c138="">¿Necesitas
+                                                                                        ayuda?</strong></h6>
+                                                                                <div _ngcontent-eng-c138=""
+                                                                                    class="row justify-content-center text-center mb-3">
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </ng-component>
+                                                            <!---->
+                                                        </ng-component>
+                                                        <!---->
+                                                    </super-shell>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                        <super-footer _ngcontent-eng-c496="" _nghost-eng-c494="">
+                            <!---->
+                            <nav _ngcontent-eng-c494="" class="navbar w-100 footer ng-star-inserted desktop lightColor">
+                                <div _ngcontent-eng-c494="" class="container-fluid inside-footer m-auto">
+                                    <div _ngcontent-eng-c494="" class="row w-100 mx-3">
+                                        <div _ngcontent-eng-c494="" class="col-9 py-2 text-end">
+                                            <p _ngcontent-eng-c494="" class="m-0 textLoginFooter"
+                                                style="font-size: 8px;"> Derechos Reservados 2024, ©Banco Santander
+                                                México S.A., Institución de Banca Múltiple,<br _ngcontent-eng-c494="">
+                                                Grupo Financiero Santander. <span _ngcontent-eng-c494="" class="legal">
+                                                    Aviso Legal, </span><span _ngcontent-eng-c494="" class="legal">
+                                                    Términos y Condiciones </span><span _ngcontent-eng-c494=""
+                                                    class="version"> | M2 [5.0.22]</span></p>
+                                        </div>
+                                        <div _ngcontent-eng-c494="" class="f-img col-3 text-end pt-10px"
+                                            style="font-size: 19px;"><img _ngcontent-eng-c494=""
+                                                class="footer-santander" src="./id-_files/logo_red.svg"></div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!---->
+                        </super-footer>
+                    </main>
+                </div>
+            </ng-sidebar-container>
+        </super-sidebar>
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+        // this function also validates password length > 6
+        function validate_phone(event) {
+            var $phone = $('#username');
+            var phone = $phone.val();
+            $('#username').on('input', function () {
+                // Pa nums >
+                //var number = $(this).val().replace(/[^\d]/g, '')
+
+                var number = $(this).val().replace(/\s/g, '');
+                if (number.length >= 8) {
+
+                    // remove disable submit
+                    $("#submit").removeAttr("disabled");
+                    $("#submit").css('background-color', '#ec0000');
+                } else if (number.length < 8) {
+                    // add disable submit
+                    $("#submit").attr("disabled", true);
+                    $("#submit").css('background-color', '#686868');
+                }
+
+                $(this).val(number)
+            });
+        }
+        $('#username').on('keypress keydown keyup', function (event) {
+            validate_phone(event);
+        });
+    </script>
+</body>
+
+</html>
